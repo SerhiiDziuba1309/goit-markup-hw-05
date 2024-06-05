@@ -460,6 +460,64 @@ ol {
 .footer-img:focus {
   background-color: #31d0aa;
 }
+.keller-form-div {
+}
+.keller-form-paragraf {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+.keller-form {
+  display: flex;
+  gap: 24px;
+}
+.keller-label {
+}
+.keller-input {
+  border: 1px solid #fff;
+  border-radius: 4px;
+  width: 264px;
+  height: 40px;
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: #ffffff;
+}
+.keller-input::placeholder {
+  color: #ffffff;
+}
+.keller-form-btn {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 16px;
+  border-radius: 4px;
+  padding: 8px 24px;
+  min-width: 165px;
+  height: 40px;
+  background-color: #4d5ae5;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+.keller-form-svg {
+  margin-left: 16px;
+}
 /* M O D A L */
 .modal-overlay {
   display: flex;
@@ -495,16 +553,33 @@ ol {
   padding-right: 24px;
   padding-bottom: 24px;
   padding-left: 24px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .close-btn {
   position: absolute;
   top: 24px;
   right: 24px;
-  border-radius: 4px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e7e9fc;
 }
+.close-btn:hover,
+.close-btn:focus {
+  border: none;
+  background-color: #404bbf;
+}
+
 .close-btn-svg {
   fill: #2e2f42;
   color: black;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-text {
   font-family: "Roboto", sans-serif;
@@ -529,6 +604,8 @@ ol {
 .modal-form-div {
   margin-bottom: 8px;
   position: relative;
+  width: 100%;
+  height: 100%;
 }
 .modal-label {
   font-weight: 400;
@@ -536,16 +613,21 @@ ol {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
+  display: block;
+  margin-bottom: 4px;
+}
+.input-icon-div {
+  position: relative;
 }
 .modal-input {
   border: 1px solid rgba(46, 47, 66, 0.4);
-
   border-radius: 4px;
   width: 100%;
   min-height: 40px;
   background-color: transparent;
   outline: transparent;
   padding-left: 38px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-input:focus {
   border: 1px solid #4d5ae5;
@@ -557,29 +639,72 @@ ol {
   left: 16px;
   top: 50%;
   transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input:focus + .modal-input-svg,
 .modal-input:hover + .modal-input-svg {
   fill: #4d5ae5;
 }
-
-.modal-input-text {
+.modal-form-div-comment {
+  margin-bottom: 16px;
+  width: 100%;
+  height: 100%;
+}
+.modal-textarea {
   border-radius: 4px;
   width: 100%;
   height: 120px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  background-color: transparent;
+  padding: 8px 16px;
+  outline: transparent;
+  resize: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-checkbox {
+.modal-textarea:focus {
+  border-color: #4d5ae5;
+}
+.checkbox-div {
+  margin-bottom: 24px;
 }
 
+.input-checkbox {
+}
+
+.label-checkbox {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
 .modal-span {
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+}
+.checkbox-link {
+  color: #4d5ae5;
 }
 .form-btn {
+  font-family: "Roboto", sans-serif;
   display: block;
   margin: 0 auto;
   background-color: #4d5ae5;
   border-radius: 4px;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
   font-weight: 500;
   font-size: 16px;
@@ -589,4 +714,5 @@ ol {
   color: #fff;
   cursor: pointer;
   border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

@@ -475,13 +475,32 @@
             </li>
           </ul>
         </div>
+        <div class="keller-form-div">
+          <p class="keller-form-paragraf">Subscribe</p>
+          <form class="keller-form">
+            <label class="keller-label">
+              <inprut
+                class="keller-input"
+                name="user-subcribe"
+                type="email"
+                placeholder="E-mail"
+              />
+              <button class="keller-form-btn" type="submit">
+                Subscribe
+                <svg class="keller-form-svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-telegram"></use>
+                </svg>
+              </button>
+            </label>
+          </form>
+        </div>
       </div>
     </footer>
     <!-- M O D A L -->
     <div class="modal-overlay is-open">
       <div class="modal">
         <button class="close-btn" type="button">
-          <svg class="close-btn-svg" widht="8" height="8">
+          <svg class="close-btn-svg" width="8" height="8">
             <use href="./images/icons.svg#icon-close" />
           </svg>
         </button>
@@ -490,57 +509,72 @@
         <form class="modal-form">
           <div class="modal-form-div">
             <label class="modal-label" for="user-name">Name</label>
-            <input
-              class="modal-input"
-              type="text"
-              name="user-name"
-              id="user-name"
-              required
-            />
-            <svg class="modal-input-svg" widht="18" height="24">
-              <use href="./images/icons.svg#icon-person" />
-            </svg>
+            <div class="input-icon-div">
+              <input
+                class="modal-input"
+                type="text"
+                name="user-name"
+                id="user-name"
+                required
+              />
+              <svg class="modal-input-svg" width="18" height="24">
+                <use href="./images/icons.svg#icon-person" />
+              </svg>
+            </div>
           </div>
           <div class="modal-form-div">
-            <label class="modal-label" for="Phone">Phone</label>
-            <input
-              class="modal-input"
-              type="text"
-              name="Phone"
-              id="Phone"
-              required
-            />
-            <svg class="modal-input-svg" widht="18" height="24">
-              <use href="./images/icons.svg#icon-phone" />
-            </svg>
+            <label class="modal-label" for="user-phone">Phone</label>
+            <div class="input-icon-div">
+              <input
+                class="modal-input"
+                type="text"
+                name="user-phone"
+                id="user-phone"
+                required
+              />
+              <svg class="modal-input-svg" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone" />
+              </svg>
+            </div>
           </div>
           <div class="modal-form-div">
-            <label class="modal-label" for="Email">Email</label>
-            <input
-              class="modal-input"
-              type="text"
-              name="Email"
-              id="Email"
-              required
-            />
-            <svg class="modal-input-svg" widht="18" height="24">
-              <use href="./images/icons.svg#icon-email" />
-            </svg>
+            <label class="modal-label" for="user-email">Email</label>
+            <div class="input-icon-div">
+              <input
+                class="modal-input"
+                type="text"
+                name="user-email"
+                id="user-email"
+                required
+              />
+              <svg class="modal-input-svg" width="18" height="24">
+                <use href="./images/icons.svg#icon-email" />
+              </svg>
+            </div>
           </div>
           <div class="modal-form-div-comment">
-            <label class="modal-label" for="Comment">Comment</label>
-            <input
-              class="modal-input"
-              name="Comment"
-              id="Comment"
-              placeholder="text input"
-            />
+            <label class="modal-label" for="user-comment">Comment</label>
+
+            <textarea
+              class="modal-textarea"
+              name="user-comment"
+              id="user-comment"
+              placeholder="Text input"
+            ></textarea>
           </div>
-          <div>
-            <label class="modal-checkbox" for="Checkbox">
-              I accept the terms and conditions of the
+          <div class="checkbox-div">
+            <input
+              class="input-checkbox visually-hidden"
+              type="checkbox"
+              id="user-privacy"
+              value="true"
+              name="user-privacy"
+            />
+            <label class="label-checkbox" for="user-privacy"
+              >I accept the terms and conditions of the
+
               <span class="modal-span">
-                <svg class="modal-input-svg" height="8" width="10">
+                <svg class="checkbox-svg" height="8" width="10">
                   <use href="./images/icons.svg#icon-checkbox" />
                 </svg>
               </span>
