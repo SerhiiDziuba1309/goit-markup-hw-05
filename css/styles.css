@@ -518,6 +518,7 @@ ol {
 }
 .keller-form-svg {
   margin-left: 16px;
+  fill: #ffffff;
 }
 /* M O D A L */
 .modal-overlay {
@@ -580,6 +581,9 @@ ol {
 .close-btn:focus {
   border: none;
   background-color: #404bbf;
+}
+button:hover > svg,
+button:focus > svg {
   fill: #ffffff;
 }
 
@@ -605,8 +609,6 @@ ol {
   flex-direction: column;
   gap: 8px;
   border-radius: 4px;
-  width: 360px;
-  height: 336px;
 }
 .modal-form-div {
   margin-bottom: 8px;
@@ -694,6 +696,7 @@ input:checked + label > span {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
+  gap: 8px;
 }
 .modal-span {
   width: 16px;
