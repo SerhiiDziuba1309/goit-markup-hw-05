@@ -461,6 +461,7 @@ ol {
   background-color: #31d0aa;
 }
 .keller-form-div {
+  margin-left: 80px;
 }
 .keller-form-paragraf {
   margin-bottom: 16px;
@@ -472,6 +473,7 @@ ol {
 }
 .keller-form {
   display: flex;
+  gap: 24px;
 }
 .keller-label {
 }
