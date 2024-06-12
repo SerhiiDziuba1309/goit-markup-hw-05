@@ -543,6 +543,7 @@ ol {
   visibility: visible;
   pointer-events: auto;
 }
+
 .modal {
   border-radius: 4px;
   width: 408px;
